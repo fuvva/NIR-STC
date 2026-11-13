@@ -338,7 +338,7 @@ def stats(best_variant, records):  # выводит данные комбина�
 
     # Вывод всех выбраных записей
     for record in selected_records:
-        record.pop('crosses_midnight')
+        record.pop('crosses_midnight') # перед выводом убрал маркер того, что запись переходит через полночь
         print(record)
 
     # вывод объектов
